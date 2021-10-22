@@ -6,8 +6,17 @@
 //
 
 import UIKit
+//API Caller
+// UI to show different cryptos
+// MVVM
 
 class ViewController: UIViewController {
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.register(, forCellReuseIdentifier: )
+        return tableView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()

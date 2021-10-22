@@ -13,6 +13,8 @@
 		72F2A9CE272341A40032BD70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F2A9CC272341A40032BD70 /* Main.storyboard */; };
 		72F2A9D0272341A60032BD70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F2A9CF272341A60032BD70 /* Assets.xcassets */; };
 		72F2A9D3272341A60032BD70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F2A9D1272341A60032BD70 /* LaunchScreen.storyboard */; };
+		72F2A9DB272343680032BD70 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F2A9DA272343680032BD70 /* APICaller.swift */; };
+		72F2A9DD27234C970032BD70 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F2A9DC27234C970032BD70 /* CryptoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		72F2A9CF272341A60032BD70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F2A9D2272341A60032BD70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F2A9D4272341A60032BD70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F2A9DA272343680032BD70 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		72F2A9DC27234C970032BD70 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				72F2A9CF272341A60032BD70 /* Assets.xcassets */,
 				72F2A9D1272341A60032BD70 /* LaunchScreen.storyboard */,
 				72F2A9D4272341A60032BD70 /* Info.plist */,
+				72F2A9DA272343680032BD70 /* APICaller.swift */,
+				72F2A9DC27234C970032BD70 /* CryptoTableViewCell.swift */,
 			);
 			path = CryptoRoyal;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				72F2A9CB272341A40032BD70 /* ViewController.swift in Sources */,
 				72F2A9C7272341A40032BD70 /* AppDelegate.swift in Sources */,
 				72F2A9C9272341A40032BD70 /* SceneDelegate.swift in Sources */,
+				72F2A9DD27234C970032BD70 /* CryptoTableViewCell.swift in Sources */,
+				72F2A9DB272343680032BD70 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
