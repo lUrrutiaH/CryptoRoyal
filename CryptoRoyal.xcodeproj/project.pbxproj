@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35C44D472723DB5B00C1B6B1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C44D462723DB5B00C1B6B1 /* Models.swift */; };
 		72F2A9C7272341A40032BD70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F2A9C6272341A40032BD70 /* AppDelegate.swift */; };
 		72F2A9C9272341A40032BD70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F2A9C8272341A40032BD70 /* SceneDelegate.swift */; };
 		72F2A9CB272341A40032BD70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F2A9CA272341A40032BD70 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35C44D462723DB5B00C1B6B1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		72F2A9C3272341A40032BD70 /* CryptoRoyal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoRoyal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F2A9C6272341A40032BD70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F2A9C8272341A40032BD70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				72F2A9D4272341A60032BD70 /* Info.plist */,
 				72F2A9DA272343680032BD70 /* APICaller.swift */,
 				72F2A9DC27234C970032BD70 /* CryptoTableViewCell.swift */,
+				35C44D462723DB5B00C1B6B1 /* Models.swift */,
 			);
 			path = CryptoRoyal;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				72F2A9CB272341A40032BD70 /* ViewController.swift in Sources */,
 				72F2A9C7272341A40032BD70 /* AppDelegate.swift in Sources */,
 				72F2A9C9272341A40032BD70 /* SceneDelegate.swift in Sources */,
+				35C44D472723DB5B00C1B6B1 /* Models.swift in Sources */,
 				72F2A9DD27234C970032BD70 /* CryptoTableViewCell.swift in Sources */,
 				72F2A9DB272343680032BD70 /* APICaller.swift in Sources */,
 			);
