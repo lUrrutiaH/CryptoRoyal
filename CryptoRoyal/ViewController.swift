@@ -21,6 +21,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     private var viewModels = [CryptoTableViewCellViewModel]()
     
+    static let numberFormatter: NumberFormatter = {
+       let formatter = NumberFormatter()
+        formatter.locale = .current
+        formatter.allowsFloats = true
+        formatter.numberStyle = .currency
+        formatter.formatterBehavior = .default
+        
+        return formatter
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Crypto Tracker"
@@ -32,12 +42,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             switch result {
             case .success(let models):
                 self?.viewModels = models.compactMap({
-                    CryptoTableViewCellViewModel(
-                        // NumberFormatter
-                        
-                        name: $0.name ?? "N/A",
-                        symbol: $0.asset_id,
-                        price: "$1"
+                    // NumberFormatter
+                    let price = $0.price_usd ?? 0
+                    let formatter = ViewController.numberFormatter
+                    let priceString = formatter.string(from: NSNumber(value: price))
+                    
+                    
+                  return CryptoTableViewCellViewModel(
+                       name: $0.name ?? "N/A",
+                       symbol: $0.asset_id,
+                       price: priceString ?? "N/A"
                     )
                 })
                 
@@ -71,6 +85,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         cell.configure(with: viewModels[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
 }
 
