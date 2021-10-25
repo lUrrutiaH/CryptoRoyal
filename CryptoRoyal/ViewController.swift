@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Crypto Tracker"
+        title = "Crypto Royal"
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
